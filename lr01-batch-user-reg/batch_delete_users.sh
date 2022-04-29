@@ -3,7 +3,9 @@
 dir=`dirname $0`
 source_file="$dir/users_list.txt"
 
+#settings: enter backup directory
 backup_directory="/opt"
+
 backup_name=$(echo `LANG=C date` | awk -F ' |:' {'print"backup_"$2"_"$3"_"$8"_"$4"_"$5"_"$6'})
 backup_path="$backup_directory/$backup_name.tar"
 #echo $backup_path
