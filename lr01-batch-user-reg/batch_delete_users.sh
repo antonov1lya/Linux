@@ -25,7 +25,7 @@ tar --directory="/home" -rf $backup_path $login &>> /dev/null
 #echo $login
 
 if [ $? -ne 0 ];then
-echo "backup error: user does not exist"
+echo "backup error: user directory does not exist"
 else
 echo "backup done"
 fi
