@@ -21,7 +21,7 @@ delete done
 -если пользователь не существует и у нет папки в /home, то удаление и резервное копирование
 осуществить невозможно и будет вывод:
 ```
-backup error: user does not exits
+backup error: user directory does not exits
 delete error: user does not exits
 ```
 - архив резервного копирования будет создан в любом случае, но в нем будут только папки пользователей,
