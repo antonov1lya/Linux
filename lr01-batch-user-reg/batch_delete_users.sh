@@ -15,7 +15,7 @@ backup_path="$backup_directory/$backup_name.tar"
 for user_data in `cat $source_file`; do
 
 login=$(echo "$user_data" | awk -F ',' {'print $1'})
-echo "Delete user with login:$login..."
+echo "delete user with login:$login..."
 
 if [ "$1" == "with-backup" ];
 then
@@ -34,7 +34,7 @@ fi
 deluser --remove-home "$login" &>>/dev/null
 
 if [ $? -ne 0 ];then
-echo "delete error: User does not exist"
+echo "delete error: user does not exist"
 else
 echo "delete done"
 fi
