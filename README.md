@@ -31,3 +31,6 @@ delete error: user does not exits
 
 ## Лабораторная работа №3
 Отчет в файле lr03-antonov.pdf
+
+## Лабораторная работа №4
+Отчет в файле lr04-antonov.pdf
